@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💖</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+
+    <div class="proposal-card">
+        <h1>Will You Be My Valentine? 💖</h1>
+        <p>You make my world brighter and my heart happier. Say "Yes" and let's make beautiful memories together! 💕</p>
+        
+        <div class="buttons">
+            <button class="yes-btn" onclick="location.href='game.html'">Yes💗</button>
+            <button class="no-btn" onmouseover="moveButton()">No 💔</button>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="valentinex27s-day-296309.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+            function moveButton() {
+            let btn = document.querySelector(".no-btn");
+            let x = Math.random() * window.innerWidth * 0.6;
+            let y = Math.random() * window.innerHeight * 0.6;
+            btn.style.transform = `translate(${x}px, ${y}px)`;
+        }
+    </script>
+
+</body>
+</html>
